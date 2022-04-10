@@ -12,7 +12,7 @@ class MyStack:
         return self.items.pop()
 
     def peek(self):
-        return self.items[len(self.items) - 1]
+        return self.items[-1]
 
     def size(self):
         return len(self.items)
@@ -37,7 +37,7 @@ def parentheses(string):
     return my_stack.isEmpty()
 
 
-my_string = '([{])'
+my_string = '({})'
 
 if parentheses(my_string) is True:
     print('Сбалансированно')
